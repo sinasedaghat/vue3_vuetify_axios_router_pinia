@@ -2,11 +2,14 @@
 // <script setup lang="ts">
 import { defineComponent } from "vue";
 import latestServices from "@/services/latest"
+import { Latest } from "@/types/latest"
 
 export default defineComponent({
   name: "about-view",
   mounted() {
-    latestServices.getLatest().then((response: Response) => {
+    // console.log("latestServices response", Latest)
+    // latestServices.getLatest().then((response: Response) => {
+    latestServices.getLatest().then((response: Latest) => {
       console.log("latestServices response", response)
     })
   }
