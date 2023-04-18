@@ -2,7 +2,7 @@ import http from "@/lib/axios"
 
 class latest {
   getLatest(): Promise<any> {
-    return http.get("/latest/");
+    return http.get("/latest");
   }
 }
 

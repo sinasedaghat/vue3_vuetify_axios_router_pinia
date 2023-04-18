@@ -1,4 +1,5 @@
-<script setup lang="ts">
+<script lang="ts">
+// <script setup lang="ts">
 import { defineComponent } from "vue";
 import latestServices from "@/services/latest"
 
